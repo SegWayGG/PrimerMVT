@@ -15,12 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from AppCoder.views import probandohtml
-from AppCoder.views import curso
+from AppCoder.views import familia
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("probandohtml/", probandohtml),
-    path("curso/", curso)
+    path("familia/", familia),
 ]
